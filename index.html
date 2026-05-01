@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <title>hotels</title>
+        <script src="./main.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__container">
+                <a href="#" class="header-logo"
+                    ><img
+                        class="logo-img"
+                        src="./images/logo/logo.svg"
+                        alt="Логотип"
+                /></a>
+
+                <div class="block-menu">
+                    <nav class="menu">
+                        <ul class="menu-list">
+                            <li class="menu-list-item">
+                                <a href="#" class="menu-link text"
+                                    >Our Hotel
+                                </a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#" class="menu-link text">
+                                    Rooms & Rates
+                                </a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#" class="menu-link text"
+                                    >Facilities
+                                </a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#" class="menu-link text">
+                                    Contact Us</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <button id="search" class="search">
+                        <img
+                            class="search-img"
+                            src="./images/icons/search.svg"
+                            alt="Иконка поиска"
+                        />
+                    </button>
+                    <form class="form" id="form">
+                        <input
+                            id="input"
+                            type="text"
+                            placeholder="Найти"
+                            name="hotel"
+                            class="input"
+                        />
+                        <button type="submit" class="btn btn-submit">
+                            Найти
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <section class="time">
+            <div class="time__container">
+                <form class="form-time">
+                    <div class="check">
+                        <span class="check-text"> Select a City </span>
+                        <img src="./images/icons/Vector.svg" alt="Стрелка" />
+                    </div>
+                    <div class="check">
+                        <span class="check-text">Check In</span>
+                        <img
+                            src="./images/icons/calendar.svg"
+                            alt="Календарь"
+                        />
+                    </div>
+                    <div class="check">
+                        <span class="check-text">Check Out</span>
+                        <img
+                            src="./images/icons/calendar.svg"
+                            alt="Календарь"
+                        />
+                    </div>
+                    <button class="btn btn-check" type="submit">
+                        Check Availability
+                    </button>
+                </form>
+            </div>
+        </section>
+        <main class="main">
+            <div class="main__container">
+                <h1 class="h1">WELCOME TO BON HOTEL</h1>
+                <h2 class="h2">Good people. Good thinking. Good feeling.</h2>
+                <button class="btn btn-main">EXPLORE</button>
+            </div>
+        </main>
+    </body>
+</html>
