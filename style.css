@@ -250,4 +250,68 @@ img {
         font-size: 1.5rem;
         width: calc((371px * 100%) / 1319px);
     }
+
+    /*Создание календаря*/
+
+    /* Конец Создание календаря*/
+    .city-label {
+        display: block;
+        height: 23px;
+    }
+    .select {
+        appearance: none;
+        opacity: 0;
+        width: 156px;
+    }
+    .select-wrapper {
+        position: relative;
+        bottom: 17px;
+        left: 0px;
+    }
+    .select-wrapper::after {
+        content: '';
+        position: absolute;
+        display: block;
+        background-image: url('./images/icons/Vector.svg');
+        width: 17px;
+        height: 12.93px;
+        top: 0;
+        right: 0;
+    }
+
+    .calendar-label {
+        height: 23px;
+        width: 162px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .calendar-label::after {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url('./images/icons/calendar.svg');
+    }
+    .date-input,
+    .date-input-out {
+        appearance: none;
+        opacity: 0;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .calendar-position {
+        position: fixed;
+        background-color: var(--white);
+        border-radius: 10px;
+        width: 30%;
+        height: 25%;
+    }
+    .hidden-calendar {
+        display: none;
+    }
 }

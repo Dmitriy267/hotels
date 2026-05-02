@@ -73,29 +73,59 @@
         </header>
         <section class="time">
             <div class="time__container">
-                <form class="form-time">
+                <form class="form-time" id="form-time">
                     <div class="check">
-                        <span class="check-text"> Select a City </span>
-                        <img src="./images/icons/Vector.svg" alt="Стрелка" />
+                        <!-- <span class="check-text"> Select a City </span>
+                        <img src="./images/icons/Vector.svg" alt="Стрелка" /> -->
+                        <label class="check-text city-label">
+                            <span class="check-text" id="span-city">
+                                Select a City</span
+                            >
+
+                            <div class="select-wrapper">
+                                <select class="check-select select" name="city">
+                                    <option value=""></option>
+                                    <option value="Moscow">Moscow</option>
+                                    <option value="Petersburg">
+                                        Saint Petersburg
+                                    </option>
+                                    <option value="Novosibirsk">
+                                        Novosibirsk
+                                    </option>
+                                    <option value="Kazan">Kazan</option>
+                                    <option value="Sochi">Sochi</option>
+                                </select>
+                            </div>
+                        </label>
                     </div>
                     <div class="check">
-                        <span class="check-text">Check In</span>
-                        <img
-                            src="./images/icons/calendar.svg"
-                            alt="Календарь"
-                        />
+                        <label class="check-text calendar-label"
+                            ><span class="check-text" id="span-checkIn"
+                                >Check In</span
+                            >
+                            <input type="date" name="date" class="date-input" />
+                        </label>
                     </div>
                     <div class="check">
-                        <span class="check-text">Check Out</span>
-                        <img
-                            src="./images/icons/calendar.svg"
-                            alt="Календарь"
-                        />
+                        <label class="check-text calendar-label"
+                            ><span class="check-text" id="span-checkOut"
+                                >Check Out</span
+                            >
+                            <input
+                                type="date"
+                                name="date-out"
+                                class="date-input-out"
+                            />
+                        </label>
                     </div>
                     <button class="btn btn-check" type="submit">
                         Check Availability
                     </button>
                 </form>
+                <div id="calendar-result" class="hidden-calendar">
+                    <button id="delete-calendar">X</button>
+                    <div id="info-calendar"></div>
+                </div>
             </div>
         </section>
         <main class="main">
