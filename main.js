@@ -59,9 +59,10 @@ formTime.addEventListener('submit', (e) => {
     formData.append('city', city);
     formData.append('date', dateIntTime);
     formData.append('date-out', dateOutTime);
-    const context = `<p>Город: ${formData.has('city') ? formData.get('city') : null}</p>
-    <p>Дата заезда: ${formData.has('date') ? formData.get('date') : null}</p>
-    <p>Дата выезда: ${formData.has('date-out') ? formData.get('date-out') : null}</p>
+    const context = `<p class='text-calendar'>Город: ${formData.has('city') ? formData.get('city') : null}</p>
+    <p class='text-calendar'>Дата заезда: ${formData.has('date') ? formData.get('date') : null}</p>
+    <p class='text-calendar'>Дата выезда: ${formData.has('date-out') ? formData.get('date-out') : null}</p>
+   
     `;
     if (calendarResult.classList.contains('hidden-calendar')) {
         calendarResult.classList.remove('hidden-calendar');

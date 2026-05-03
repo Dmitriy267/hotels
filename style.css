@@ -75,6 +75,12 @@ img {
     font-weight: 500;
     letter-spacing: 0%;
 }
+.title {
+    font-size: 2.8125rem;
+    color: var(--brawn);
+    font-weight: 500;
+}
+
 .btn {
     background-color: var(--orange);
     display: flex;
@@ -88,7 +94,7 @@ img {
         max-width: 1319px;
         margin: 0 auto;
 
-        background-color: grey;
+        /* background-color: grey; */
     }
 
     .header {
@@ -309,9 +315,189 @@ img {
         background-color: var(--white);
         border-radius: 10px;
         width: 30%;
-        height: 25%;
+        height: 20%;
     }
     .hidden-calendar {
         display: none;
+    }
+    .delete-calendar {
+        position: absolute;
+        right: 0;
+    }
+
+    .text-calendar {
+        padding: 16px 0px 0px 10px;
+        color: var(--brawn);
+        font-size: 1.25rem;
+    }
+    .facilities-section {
+        position: relative;
+        min-height: 1080px;
+    }
+    .facilities-info {
+        position: absolute;
+        top: -162px;
+        background-color: var(--white);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 1319px;
+        min-height: 289px;
+    }
+    .facilities__container {
+        display: block;
+        text-align: center;
+        padding-left: 183px;
+        padding-right: 193px;
+    }
+    .facilities-h3 {
+        padding-top: 42px;
+        padding-bottom: 45px;
+        padding-left: 9px;
+    }
+
+    .facilities-items {
+        display: grid;
+        grid-template-columns: repeat(5, 83px);
+        gap: 137px;
+        justify-items: center;
+        max-width: 943px;
+        width: 100%;
+    }
+    .facilities-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 99px;
+        width: 83px;
+    }
+
+    .svg-kitten,
+    .svg-pool,
+    .svg-wifi,
+    .svg-gym,
+    .svg-taxi {
+        fill: var(--orange);
+        width: calc((60px * 100%) / 83px);
+        height: calc((60px * 100%) / 99px);
+        transition: fill 0.8ms ease-in-out;
+    }
+    .svg-kitten:hover,
+    .svg-pool:hover,
+    .svg-wifi:hover,
+    .svg-gym:hover,
+    .svg-taxi:hover {
+        fill: rgb(53, 53, 240);
+    }
+    .facilities-span {
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: var(--brawn);
+    }
+
+    .rooms__container {
+        padding-top: 178px;
+        text-align: center;
+    }
+    .title-rooms-h2 {
+        padding-bottom: 52px;
+    }
+    .rooms_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 60px;
+    }
+    .block-room-item {
+        border-radius: 10px;
+        width: 100%;
+    }
+    .rooms_grid .block-room-item:nth-child(1) {
+        background-image: url('./images/background/room1.jpg');
+        background-repeat: no-repeat;
+    }
+    .rooms_grid .block-room-item:nth-child(2) {
+        background-image: url('./images/background/room2.jpg');
+        background-repeat: no-repeat;
+    }
+    .rooms_grid .block-room-item:nth-child(3) {
+        background-image: url('./images/background/room3.jpg');
+        background-repeat: no-repeat;
+    }
+    .rooms_grid .block-room-item:nth-child(4) {
+        background-image: url('./images/background/room4.jpg');
+        background-repeat: no-repeat;
+    }
+    .title-room {
+        color: var(--white);
+        font-family: Ubuntu;
+        font-weight: 500;
+        font-size: 2.5rem;
+    }
+    .link-decorate {
+        border-radius: 10px;
+        background-color: var(--orange);
+        text-align: center;
+        width: 244px;
+        height: 76px;
+        padding-top: 24px;
+    }
+    .pos-title-1 {
+        margin-top: 302px;
+    }
+    .pos-title-2 {
+        margin-top: 302px;
+    }
+    .pos-title-3 {
+        margin-top: 289px;
+    }
+    .pos-title-4 {
+        margin-top: 289px;
+        margin-left: 14px;
+    }
+    .pos-1 {
+        margin-top: 21px;
+        margin-left: 194px;
+        margin-bottom: 56px;
+    }
+    .pos-2 {
+        margin-top: 21px;
+        margin-left: 194px;
+    }
+    .pos-3 {
+        margin-top: 31px;
+        margin-left: 194px;
+    }
+    .pos-4 {
+        margin-top: 33px;
+        margin-left: 210px;
+    }
+    .link-room {
+        color: var(--white);
+        font-family: Ubuntu;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    .order-section {
+        padding-top: 114px;
+    }
+    .order__container {
+        display: block;
+    }
+    .block-order-items {
+        text-align: center;
+    }
+    .order-h3 {
+        margin-bottom: 38px;
+    }
+
+    .btn-order {
+        font-family: Ubuntu;
+        font-weight: 500;
+        font-size: 1.5rem;
+        width: calc((419px * 100%) / 1319px);
+        height: 76px;
+        margin: 0 auto;
     }
 }
