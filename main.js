@@ -14,6 +14,8 @@ const formTime = document.getElementById('form-time');
 const calendarResult = document.getElementById('calendar-result');
 const deleteCalendar = document.getElementById('delete-calendar');
 const infoCalendar = document.getElementById('info-calendar');
+
+const footerSubmit = document.getElementById('footer-submit');
 searchBtn.addEventListener('click', function () {
     form.classList.toggle('form');
     if (!form.classList.contains('form')) {
@@ -30,6 +32,7 @@ form.addEventListener('submit', function (e) {
 
     formData.append('hotel', val);
     console.log(formData.get('hotel'));
+    alert(formData.get('hotel'));
     if (formData.get('hotel')) {
         setTimeout(() => {
             input.value = '';
@@ -77,4 +80,15 @@ deleteCalendar.addEventListener('click', () => {
     calendarResult.classList.add('hidden-calendar');
     calendarResult.classList.remove('calendar-position');
     calendarResult.style.zIndex = 0;
+});
+
+footerSubmit.addEventListener('submit', function (e) {
+    e.preventDefault();
+    let email = document.getElementById('email-footer').value;
+    let formData = new FormData();
+    formData.append('email', email);
+    if (formData.has('email')) {
+        alert(formData.get('email'));
+        document.getElementById('email-footer').value = ' ';
+    }
 });

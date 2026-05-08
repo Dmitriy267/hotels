@@ -69,6 +69,8 @@ img {
     --brawn: #957554;
     --black: #111;
     --white: #fff;
+    --hover: #36aef3;
+    --submit-hover: #f352b5a4;
 }
 .text {
     font-family: 'Ubuntu';
@@ -88,6 +90,24 @@ img {
     align-items: center;
     border-radius: 10px;
     color: var(--white);
+}
+
+.btn-main:hover,
+.link-decorate:hover,
+.btn-order:hover {
+    background-color: var(--hover);
+}
+.footer-btn:hover {
+    background-color: var(--submit-hover);
+}
+.btn-main,
+.link-decorate,
+.btn-order,
+.footer-btn {
+    transition: background-color 0.3s ease-in-out;
+}
+.link_hover:hover {
+    background-image: linear-gradient(to top right, #cf3abb 25%, #4fa4cf 99%);
 }
 @media screen and (max-width: 1441px) {
     [class*='__container'] {
@@ -637,7 +657,8 @@ img {
         width: 60px;
     }
     .main__container {
-        padding: 0 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .h1 {
         font-size: 4rem;
@@ -648,13 +669,16 @@ img {
     }
 
     .facilities-items {
+        grid-template-columns: repeat(auto-fill, 100px);
         gap: 40px;
     }
     .menu-link {
         font-size: 1.3rem;
     }
     .rooms__container {
-        padding: 0 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 225px;
     }
     .rooms_grid {
         gap: 20px;
@@ -762,7 +786,7 @@ img {
         font-size: 2.1rem;
     }
     .rooms__container {
-        padding-top: 320px;
+        padding-top: 315px;
     }
     .rooms_grid {
         grid-template-columns: repeat(1, 1fr);
@@ -815,5 +839,35 @@ img {
     .footer-btn {
         width: 100%;
         max-width: 100%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .visible {
+        width: 100%;
+    }
+    .input {
+        width: auto;
+    }
+    .btn-submit {
+        width: auto;
+    }
+    .calendar-position {
+        width: 82%;
+        height: 8%;
+    }
+    .title {
+        font-size: 2.3rem;
+    }
+    .pos-title-1,
+    .pos-title-2,
+    .pos-title-3,
+    .pos-title-4 {
+        margin-top: 150px;
+    }
+    .pos-1,
+    .pos-2,
+    .pos-3,
+    .pos-4 {
+        min-width: 145px;
     }
 }
