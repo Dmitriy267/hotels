@@ -25,6 +25,18 @@
                 /></a>
 
                 <div class="block-menu">
+                    <form class="form" id="form">
+                        <input
+                            id="input"
+                            type="text"
+                            placeholder="Найти"
+                            name="hotel"
+                            class="input"
+                        />
+                        <button type="submit" class="btn btn-submit">
+                            Найти
+                        </button>
+                    </form>
                     <nav class="menu">
                         <ul class="menu-list">
                             <li class="menu-list-item">
@@ -48,15 +60,22 @@
                                 >
                             </li>
                         </ul>
+                        <button id="search" class="search">
+                            <img
+                                class="search-img"
+                                src="./images/icons/search.svg"
+                                alt="Иконка поиска"
+                            />
+                        </button>
                     </nav>
-                    <button id="search" class="search">
+                    <!-- <button id="search" class="search">
                         <img
                             class="search-img"
                             src="./images/icons/search.svg"
                             alt="Иконка поиска"
                         />
-                    </button>
-                    <form class="form" id="form">
+                    </button> -->
+                    <!-- <form class="form" id="form">
                         <input
                             id="input"
                             type="text"
@@ -67,7 +86,7 @@
                         <button type="submit" class="btn btn-submit">
                             Найти
                         </button>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </header>
@@ -75,8 +94,6 @@
             <div class="time__container">
                 <form class="form-time" id="form-time">
                     <div class="check">
-                        <!-- <span class="check-text"> Select a City </span>
-                        <img src="./images/icons/Vector.svg" alt="Стрелка" /> -->
                         <div class="check-text city-label">
                             <span class="check-text" id="span-city">
                                 Select a City</span
@@ -192,6 +209,7 @@
                         <h3 class="title-room pos-title-1">
                             Standard Twin Room
                         </h3>
+
                         <div class="link-decorate pos-1">
                             <a href="#" class="link-room">Check Rates</a>
                         </div>

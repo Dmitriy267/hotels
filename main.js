@@ -38,6 +38,8 @@ form.addEventListener('submit', function (e) {
             input.value = '';
         }, 800);
     }
+    form.classList.remove('visible');
+    form.classList.add('form');
 });
 
 dateInput.addEventListener('change', function () {
