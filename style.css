@@ -1134,7 +1134,6 @@ img {
     }
 
     .facilities-items {
-        grid-template-columns: repeat(5, 100px);
         gap: 40px;
     }
     .menu-link {
@@ -1143,7 +1142,7 @@ img {
     .rooms__container {
         padding-left: 20px;
         padding-right: 20px;
-        padding-top: 225px;
+        padding-top: 170px;
     }
     .rooms_grid {
         gap: 20px;
@@ -1247,9 +1246,7 @@ img {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .facilities-items {
-        grid-template-columns: repeat(auto-fill, 100px);
-    }
+
     .facilities-items {
         gap: 14px;
     }
@@ -1257,7 +1254,7 @@ img {
         font-size: 2.1rem;
     }
     .rooms__container {
-        padding-top: 315px;
+        padding-top: 170px;
     }
     .rooms_grid {
         grid-template-columns: repeat(1, 1fr);
@@ -1312,6 +1309,18 @@ img {
         max-width: 100%;
     }
 }
+@media screen and (min-width: 321px) and (max-width: 520px) {
+    .main {
+        background-size: auto;
+    }
+    .facilities-items {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .rooms__container {
+        padding-top: 240px;
+    }
+}
 @media screen and (max-width: 320px) {
     .visible {
         width: 100%;
@@ -1325,6 +1334,16 @@ img {
     .calendar-position {
         width: 82%;
         height: 8%;
+    }
+    .main {
+        background-size: auto;
+    }
+    .facilities-items {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .rooms__container {
+        padding-top: 315px;
     }
     .title {
         font-size: 2.3rem;
