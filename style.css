@@ -909,6 +909,7 @@ img {
         width: auto;
     }
     .calendar-position {
+        min-width: 280px;
         width: 82%;
         height: 8%;
     }
